@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="icon/iconfont.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <header>
+            <a href="#"><i class="iconfont">&#xe653;</i></a>
+            <a href="#">购物车</a>
+            <a href="#"></a>
+        </header>
+        <section>
+            <div class="cont">
+                <span id="contCheck"></span>
+                <div class="pic">
+                    <img src="img/img1.jpg" alt="">
+                </div>
+                <div class="centers">
+                    <h1>告白热气球<strong>X</strong></h1>
+                    <h2>welcom to you</h2>
+                    <h3>
+                        <b>￥1500</b>
+                        <p><span>-</span>
+                            <span>1</span>
+                            <span>+</span></p>
+                    </h3>
+                </div>
+            </div> 
+            <div class="cont">
+                <span id="contCheck"></span>
+                <div class="pic">
+                    <img src="img/img2.jpg" alt="">
+                </div>
+                <div class="centers">
+                    <h1>美丽的鲜花<strong>X</strong></h1>
+                    <h2>welcom to you</h2>
+                    <h3>
+                        <b>￥1500</b>
+                        <p><span>-</span>
+                            <span>1</span>
+                            <span>+</span></p>
+                    </h3>
+                </div>
+            </div>
+            <div class="cont">
+                <span id="contCheck"></span>
+                <div class="pic">
+                    <img src="img/img3.jpg" alt="">
+                </div>
+                <div class="centers">
+                    <h1>大树的天下<strong>X</strong></h1>
+                    <h2>welcom to you</h2>
+                    <h3>
+                        <b>￥1500</b>
+                        <p><span>-</span>
+                            <span>1</span>
+                            <span>+</span></p>
+                    </h3>
+                </div>
+            </div>
+            <div class="cont">
+                <span id="contCheck"></span>
+                <div class="pic">
+                    <img src="img/img4.jpg" alt="">
+                </div>
+                <div class="centers">
+                    <h1>蒲公英的家<strong>X</strong></h1>
+                    <h2>welcom to you</h2>
+                    <h3>
+                        <b>￥1500</b>
+                        <p><span>-</span>
+                            <span>1</span>
+                            <span>+</span></p>
+                    </h3>
+                </div>
+            </div>
+            <div class="cont">
+                <span id="contCheck"></span>
+                <div class="pic">
+                    <img src="img/img5.jpg" alt="">
+                </div>
+                <div class="centers">
+                    <h1>幸福的眼睛<strong>X</strong></h1>
+                    <h2>welcom to you</h2>
+                    <h3>
+                        <b>￥1500</b>
+                        <p><span>-</span>
+                            <span>1</span>
+                            <span>+</span></p>
+                    </h3>
+                </div>
+            </div>
+            <div class="cont">
+                <span id="contCheck"></span>
+                <div class="pic">
+                    <img src="img/img1.jpg" alt="">
+                </div>
+                <div class="centers">
+                    <h1>热气球<strong>X</strong></h1>
+                    <h2>welcom to you</h2>
+                    <h3>
+                        <b>￥1500</b>
+                        <p><span>-</span>
+                            <span>1</span>
+                            <span>+</span></p>
+                    </h3>
+                </div>
+            </div>
+        </section>
+        <footer>
+             <main class="content">
+                <shopcar-item
+                        ng-repeat="item in productItems"
+                        item="item"
+                        index="{{$index}}"></shopcar-item>
+                <div class="cho">
+                    <h1>
+                        <span class="all" ng-class="{allon:flag}" ng-click="checkAll()"></span>
+                        <span>全选</span>
+                    </h1>
+
+                    <h2>
+                        <span class="total">合计：<span class="money">￥{{goodsPrice}}</span></span>
+                        <span></span><span>(不含运费)</span>
+                    </h2>
+
+                    <h3 class="buy">结算({{goodsCount}})</h3>
+                </div>
+            </main>  
+           <div class="foot">
+                <ul>
+                    <li><a href="#"><i class="iconfont">&#xe648;</i></a><span>首页</span></li>
+                    <li><a href="#"><i class="iconfont">&#xe714;</i></a><span>产品</span></li>
+                    <li><a href="#"><i class="iconfont">&#xe729;</i></a><span>活动</span></li>
+                    <li><a href="#"><i class="iconfont">&#xe716;</i></a><span>我的</span></li>
+                </ul>
+           </div>
+        </footer>
+    </div>
+</body>
+</html>
